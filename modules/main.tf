@@ -11,8 +11,8 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "learnk8sResourceGroup-${var.env_name}"
-  location = "northeurope"
+  name     = "rg-${var.env_name}"
+  location = "eastus"
 }
 
 resource "azurerm_kubernetes_cluster" "cluster" {
